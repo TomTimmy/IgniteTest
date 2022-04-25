@@ -9,17 +9,27 @@ import {
   Text,
   GradientBackground,
   AutoImage as Image,
+  Checkbox,
 } from "../../components"
 import { color, spacing, typography } from "../../theme"
 import { NavigatorParamList } from "../../navigators"
+import { palette } from "../../theme/palette"
 
 const bowserLogo = require("./bowser.png")
-
 const FULL: ViewStyle = { flex: 1 }
 const CONTAINER: ViewStyle = {
   backgroundColor: color.transparent,
   paddingHorizontal: spacing[4],
 }
+const DIVISION_LINE: ViewStyle = {
+  // width: "80%",
+  width: 350,
+  // height: "2%",
+  height: 2,
+  backgroundColor: palette.lightGrey,
+  alignSelf: "center",
+}
+
 const TEXT: TextStyle = {
   color: color.palette.white,
   fontFamily: typography.primary,
@@ -90,12 +100,19 @@ export const WelcomeScreen: FC<StackScreenProps<NavigatorParamList, "welcome">> 
   ({ navigation }) => {
     const nextScreen = () => navigation.navigate("demo")
 
+    console.log("whereami")
     return (
       <View testID="WelcomeScreen" style={FULL}>
         <GradientBackground colors={["#422443", "#281b34"]} />
         <Screen style={CONTAINER} preset="scroll" backgroundColor={color.transparent}>
           <Header headerTx="welcomeScreen.poweredBy" style={HEADER} titleStyle={HEADER_TITLE} />
           <Text style={TITLE_WRAPPER}>
+            <Text style={TITLE} text="Hi Ignite" />
+            <View style={DIVISION_LINE} />
+
+            <Text style={TITLE} text="안녕 Ignite" />
+            <View style={DIVISION_LINE} />
+
             <Text style={TITLE} text="Your new app, " />
             <Text style={ALMOST} text="almost" />
             <Text style={TITLE} text="!" />
