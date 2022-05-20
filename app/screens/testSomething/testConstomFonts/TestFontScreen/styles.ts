@@ -1,5 +1,8 @@
 import { Platform, StyleSheet, TextStyle } from "react-native"
 
+//! iOS 설정시, font family name 말고,
+//! Android 때 처럼 file name 으로 해도 적용 잘 된다 :)
+
 export const NOTO: TextStyle = {
   fontFamily: Platform.select({
     ios: "NotoSansKR-Regular", // The font family name

@@ -22,3 +22,7 @@ const CUSTOM_FONT_TEXT: TextStyle = {
   // ... whatever else
 }
 ```
+
+## iOS 설정시, font family name 말고,
+
+## Android 때 처럼 file name 으로 해도 적용 잘 된다 :)

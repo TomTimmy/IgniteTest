@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react"
 import Button from "../Button"
 import styles from "./styles"
 import { JustComponent } from "../JustComponent"
+
 // ? 내가 기억하기로는 리렌더링 조건 중에 하나가 "이전에 저장되어있던 state 값과
 // ? 현재의 state 값이 서로 다를 때"라고 알고있는데..
 // ? 그러면 화면 안에 있는 여러 개의 state 중 하나의 state를 변경함으로써

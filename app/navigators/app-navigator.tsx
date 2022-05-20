@@ -43,7 +43,7 @@ const AppStack = () => {
       }}
       initialRouteName="welcome"
     >
-      <Stack.Screen name="welcome" component={TestFontScreen} />
+      <Stack.Screen name="welcome" component={AddressScreen} />
       <Stack.Screen name="demo" component={DemoScreen} />
       <Stack.Screen name="demoList" component={DemoListScreen} />
       {/** 🔥 Your screens go here */}
