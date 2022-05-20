@@ -1,6 +1,6 @@
 import { Text, Pressable, StyleSheet } from "react-native"
 import React from "react"
-
+import { Noto, Pretendard, Poppins } from "../AddressScreen/styles"
 interface ButtonProps {
   text: string
   onPress: () => void

@@ -11,6 +11,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack"
 import { WelcomeScreen, DemoScreen, DemoListScreen } from "../screens"
 import { navigationRef, useBackButtonHandler } from "./navigation-utilities"
 import { AddressScreen } from "../screens/testSomething/testRerendering/AddressScreen"
+import { TestFontScreen } from "../screens/testSomething/testConstomFonts/TestFontScreen"
+
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
  * as well as what properties (if any) they might take when navigating to them.
@@ -41,7 +43,7 @@ const AppStack = () => {
       }}
       initialRouteName="welcome"
     >
-      <Stack.Screen name="welcome" component={AddressScreen} />
+      <Stack.Screen name="welcome" component={TestFontScreen} />
       <Stack.Screen name="demo" component={DemoScreen} />
       <Stack.Screen name="demoList" component={DemoListScreen} />
       {/** 🔥 Your screens go here */}
