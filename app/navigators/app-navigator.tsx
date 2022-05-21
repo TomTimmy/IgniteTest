@@ -12,6 +12,8 @@ import { WelcomeScreen, DemoScreen, DemoListScreen } from "../screens"
 import { navigationRef, useBackButtonHandler } from "./navigation-utilities"
 import { AddressScreen } from "../screens/testSomething/testRerendering/AddressScreen"
 import { TestFontScreen } from "../screens/testSomething/testConstomFonts/TestFontScreen"
+import IamportMain from "../screens/testSomething/testIamport/example/IamportMain"
+import { IamportStack } from "../screens/testSomething/testIamport/example/NavigationService"
 
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
@@ -62,8 +64,10 @@ export const AppNavigator = (props: NavigationProps) => {
       theme={colorScheme === "dark" ? DarkTheme : DefaultTheme}
       {...props}
     >
-      <AppStack />
+      {/* <AppStack /> */}
+      <IamportStack />
     </NavigationContainer>
+    // <IamportMain />
   )
 }
 
