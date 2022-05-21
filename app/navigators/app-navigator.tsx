@@ -13,8 +13,13 @@ import { navigationRef, useBackButtonHandler } from "./navigation-utilities"
 import { AddressScreen } from "../screens/testSomething/testRerendering/AddressScreen"
 import { TestFontScreen } from "../screens/testSomething/testConstomFonts/TestFontScreen"
 import IamportMain from "../screens/testSomething/testIamport/example/IamportMain"
-import { IamportStack } from "../screens/testSomething/testIamport/example/NavigationService"
-
+import {
+  IamportNavigation,
+  IamportStack,
+} from "../screens/testSomething/testIamport/example/NavigationService"
+import { NativeBaseProvider } from "native-base"
+import { SafeAreaProvider } from "react-native-safe-area-context"
+import Home from "../screens/testSomething/testIamport/example/Home"
 /**
  * This type allows TypeScript to know what routes are defined in this navigator
  * as well as what properties (if any) they might take when navigating to them.
@@ -45,7 +50,7 @@ const AppStack = () => {
       }}
       initialRouteName="welcome"
     >
-      <Stack.Screen name="welcome" component={AddressScreen} />
+      <Stack.Screen name="welcome" component={Home} />
       <Stack.Screen name="demo" component={DemoScreen} />
       <Stack.Screen name="demoList" component={DemoListScreen} />
       {/** 🔥 Your screens go here */}
@@ -64,10 +69,8 @@ export const AppNavigator = (props: NavigationProps) => {
       theme={colorScheme === "dark" ? DarkTheme : DefaultTheme}
       {...props}
     >
-      {/* <AppStack /> */}
-      <IamportStack />
+      <AppStack />
     </NavigationContainer>
-    // <IamportMain />
   )
 }
 
