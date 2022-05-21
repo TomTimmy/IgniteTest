@@ -74,8 +74,6 @@
 		EADEA568884090C1B008E181 /* libPods-IgniteTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IgniteTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F1305B062F2F4C09A5A77282 /* Pretendard-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Pretendard-Bold.ttf"; path = "../assets/fonts/Pretendard-Bold.ttf"; sourceTree = "<group>"; };
-		FADC92785F734A2D9A006C89 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,7 +212,6 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				71ED362ACEA45F9F60DCD285 /* Pods */,
 				7350A8675C8FC8C91C40F492 /* ExpoModulesProviders */,
-				3CA7F4348FEA4C2283B821AE /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -384,12 +381,6 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				8E4F277597794D94B0959783 /* NotoSansKR-Regular.otf in Resources */,
-				013D02BE96B44CC4AD72C5DD /* Poppins-Regular.ttf in Resources */,
-				CB058659BE3F4115B54F091F /* Pretendard-Regular.otf in Resources */,
-				4F0D03AC48F04AD9A3084E01 /* NotoSansKR-Bold.otf in Resources */,
-				C97B006776F2448099135B1B /* Poppins-MediumItalic.ttf in Resources */,
-				31AF481301484474B001848B /* Pretendard-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,28 +1,4 @@
-import { Platform, StyleSheet, TextStyle } from "react-native"
-
-export const Noto: TextStyle = {
-  fontFamily: Platform.select({
-    ios: "NotoSansKR", // The font family name
-    android: "NotoSansKR-Regular", // The file name
-  }),
-  // ... whatever else
-}
-
-export const Pretendard: TextStyle = {
-  fontFamily: Platform.select({
-    ios: "Pretendard", // The font family name
-    android: "Pretendard-Regular", // The file name
-  }),
-  // ... whatever else
-}
-
-export const Poppins: TextStyle = {
-  fontFamily: Platform.select({
-    ios: "Poppins", // The font family name
-    android: "Poppins-Regular", // The file name
-  }),
-  // ... whatever else
-}
+import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
   root: {
